@@ -13,10 +13,10 @@ import java.io.PrintStream;
  * @author Yamisteven23
  */
 public class Read {
-    public static void main(String[] args)
+    public static void read(String[] args)
     {
         PrintStream out = System.out;
-        File file = new File("");
+        File file = new File("NameExample.xlsx");
         out.println("Open Successful");
     }
 }
