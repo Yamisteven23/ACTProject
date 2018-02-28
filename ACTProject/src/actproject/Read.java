@@ -14,9 +14,10 @@ import java.io.*;
 public class Read {
     public static void read(String fileName)
     {
-        
+        //to do: change .txt later to .csv or .xsls
         String username = System.getProperty("user.name");
-        String filePath = "C:\\Users\\" + username + "\\Desktop\\" + fileName;
+        String filePath = "C:\\Users\\" + username + "\\Desktop\\" + fileName
+                          + ".txt";
         String line = null;
         try {
             // FileReader reads text files in the default encoding.
