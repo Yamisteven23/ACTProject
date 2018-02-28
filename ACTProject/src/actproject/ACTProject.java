@@ -5,6 +5,8 @@
  */
 package actproject;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Yamisteven23
@@ -16,7 +18,10 @@ public class ACTProject {
      */
     public static void main(String[] args) {
         System.out.println("Hello!");
-        Read.read();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the name of the file?");
+        String fileName = scanner.next();
+        Read.read(fileName);
     }
     
 }
