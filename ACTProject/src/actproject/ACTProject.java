@@ -16,7 +16,7 @@ public class ACTProject {
      */
     public static void main(String[] args) {
         System.out.println("Hello!");
-        Read.read(args);
+        Read.read();
     }
     
 }
