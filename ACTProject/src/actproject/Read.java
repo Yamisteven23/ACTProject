@@ -12,15 +12,16 @@ import java.io.*;
  * @author Yamisteven23
  */
 public class Read {
-    public static void read()
+    public static void read(String fileName)
     {
+        
         String username = System.getProperty("user.name");
-        String fileName = "C:\\Users\\" + username + "\\Desktop\\test2.txt";
+        String filePath = "C:\\Users\\" + username + "\\Desktop\\" + fileName;
         String line = null;
         try {
             // FileReader reads text files in the default encoding.
             FileReader fileReader = 
-                new FileReader(fileName);
+                new FileReader(filePath);
 
             // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader = 
@@ -34,14 +35,12 @@ public class Read {
             bufferedReader.close();         
         }
         catch(FileNotFoundException ex) {
-            System.out.println(
-                "Unable to open file '" + 
-                fileName + "'");                
+            System.out.println("Unable to open file '" + 
+                filePath + "'");                
         }
         catch(IOException ex) {
-            System.out.println(
-                "Error reading file '" 
-                + fileName + "'"); 
+            System.out.println("Error reading file '" 
+                + filePath + "'"); 
         
     }
         
